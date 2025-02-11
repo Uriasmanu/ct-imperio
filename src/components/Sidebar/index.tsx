@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
-import { Home, LibraryBig, MenuIcon, Package, Settings, ShoppingBag, Users } from "lucide-react";
+import { LibraryBig, MenuIcon, Users } from "lucide-react";
 import { TooltipContent, TooltipProvider, TooltipTrigger } from "../ui/tooltip";
 import { Tooltip } from "@radix-ui/react-tooltip";
 import Image from "next/image";
