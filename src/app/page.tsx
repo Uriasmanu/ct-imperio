@@ -1,9 +1,6 @@
 import { CalendarClock, Clock } from "lucide-react";
 import Image from "next/image";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-
 export default function Home() {
   return (
     <div className="bg-slate-800 flex flex-col sm:flex-row">
