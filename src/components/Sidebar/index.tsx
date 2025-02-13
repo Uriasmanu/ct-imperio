@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
-import { LibraryBig, MenuIcon, Users } from "lucide-react";
+import { LibraryBig, Users } from "lucide-react";
 import { TooltipContent, TooltipProvider, TooltipTrigger } from "../ui/tooltip";
 import { Tooltip } from "@radix-ui/react-tooltip";
 import Image from "next/image";
@@ -13,7 +13,7 @@ import { FaDumbbell, FaWhatsapp } from "react-icons/fa";
 
 export function Sidebar() {
     return (
-        <div className="flex w-full flex-col bg-muted/40">
+        <div className="flex w-full flex-col bg-muted/40 ">
 
             <aside className="fixed inset-y-0 left-0 z-10 hidden w-20 border-r bg-background sm:flex flex-col bg-yellow-300">
                 <nav className="flex flex-col items-center gap-4 px-2 py-5">
@@ -85,50 +85,51 @@ export function Sidebar() {
                         </Tooltip>
 
                         <div className="flex flex-col gap-4 py-4 mt-16">
-                                    <Link
-                                        href="https://www.facebook.com/share/165fabMdE9/?mibextid=qi2Omg"
-                                        className="flex items-center gap-4 px-2.5 hover:text-foreground"
-                                        prefetch={false}
-                                    >
-                                        <RiFacebookCircleLine className="h-5 w-5 transition-all" />
-                                    </Link>
+                            <Link
+                                href="https://www.facebook.com/share/165fabMdE9/?mibextid=qi2Omg"
+                                className="flex items-center gap-4 px-2.5 hover:text-foreground"
+                                prefetch={false}
+                            >
+                                <RiFacebookCircleLine className="h-5 w-5 transition-all" />
+                            </Link>
 
-                                    <Link
-                                        href="https://www.instagram.com/ct.imperio.fitness/"
-                                        className="flex items-center gap-4 px-2.5 hover:text-foreground"
-                                        prefetch={false}
-                                    >
-                                        <BsInstagram className="h-5 w-5 transition-all" />
-                                    </Link>
+                            <Link
+                                href="https://www.instagram.com/ct.imperio.fitness/"
+                                className="flex items-center gap-4 px-2.5 hover:text-foreground"
+                                prefetch={false}
+                            >
+                                <BsInstagram className="h-5 w-5 transition-all" />
+                            </Link>
 
-                                    <Link
-                                        href="https://www.tiktok.com/@eusouwilll"
-                                        className="flex items-center gap-4 px-2.5 hover:text-foreground"
-                                        prefetch={false}
-                                    >
-                                        <AiFillTikTok className="h-5 w-5 transition-all" />
-                                    </Link>
-                                    <Link
-                                        href="https://www.google.com/maps/place/R.+Araraquara,+193+-+Alto+Cafezal,+Mar%C3%ADlia+-+SP,+17504-086/@-22.2131632,-49.9525712,17z/data=!3m1!4b1!4m6!3m5!1s0x94bfd75eea16093b:0x7312fa3826dd8775!8m2!3d-22.2131632!4d-49.9525712!16s%2Fg%2F11vjz5r1v1?entry=ttu&g_ep=EgoyMDI1MDIwOS4wIKXMDSoJLDEwMjExMjM0SAFQAw%3D%3D"
-                                        className="flex items-center gap-4 px-2.5 hover:text-foreground"
-                                        prefetch={false}
-                                    >
-                                        <LuMapPin className="h-5 w-5 transition-all" />
-                                    </Link>
+                            <Link
+                                href="https://www.tiktok.com/@eusouwilll"
+                                className="flex items-center gap-4 px-2.5 hover:text-foreground"
+                                prefetch={false}
+                            >
+                                <AiFillTikTok className="h-5 w-5 transition-all" />
+                            </Link>
+                            <Link
+                                href="https://www.google.com/maps/place/R.+Araraquara,+193+-+Alto+Cafezal,+Mar%C3%ADlia+-+SP,+17504-086/@-22.2131632,-49.9525712,17z/data=!3m1!4b1!4m6!3m5!1s0x94bfd75eea16093b:0x7312fa3826dd8775!8m2!3d-22.2131632!4d-49.9525712!16s%2Fg%2F11vjz5r1v1?entry=ttu&g_ep=EgoyMDI1MDIwOS4wIKXMDSoJLDEwMjExMjM0SAFQAw%3D%3D"
+                                className="flex items-center gap-4 px-2.5 hover:text-foreground"
+                                prefetch={false}
+                            >
+                                <LuMapPin className="h-5 w-5 transition-all" />
+                            </Link>
 
-                                </div>
+                        </div>
 
                     </TooltipProvider>
                 </nav>
 
             </aside>
 
-            <div className="sm:hidden flex flex-col sm:gap-4 sm:py-4 sm:pl-14">
-                <header className="sticky top-0 z-30 flex h-14 items-center px-4 bg-background sm:static sm:h-auto sm:border-0 sm-bg-transparent sm:px-6">
+            <div className="sm:hidden flex flex-col sm:gap-4 sm:py-4 sm:pl-14 ">
+                <header className="sticky top-0 z-30 flex h-14 items-center px-4 bg-background sm:static sm:h-auto border-0 sm:bg-transparent sm:px-6 bg-slate-800">
                     <Sheet>
                         <SheetTrigger asChild>
-                            <Button size="icon" variant="outline" className="sm:hidden border-0">
-                                <MenuIcon className="w-6 h-6" />
+                            <Button size="icon" className="sm:hidden border-0 bg-slate-800 ">
+                                <svg width="256px" height="256px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+
                                 <span className="sr-only">abrir / fechar menu</span>
                             </Button>
                         </SheetTrigger>
@@ -224,7 +225,7 @@ export function Sidebar() {
                         </SheetContent>
                     </Sheet>
 
-                    <h1 className="font-semibold m-auto">CT Imperio</h1>
+                    <h1 className="font-semibold m-auto text-yellow-50">CT Imperio</h1>
                 </header>
             </div>
         </div>
