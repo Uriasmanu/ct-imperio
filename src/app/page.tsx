@@ -27,21 +27,20 @@ export default function Home() {
 
           </div>
 
-
-          <div className="w-full flex justify-center absolute top-[90%]">
+          <div className="w-full flex justify-center absolute top-[90%] sm:top-[96%]">
             <Image
               src="/image/logo.png"
               alt="logo do ct imperio"
-              className="w-10 h-10"
-              width={180} // largura desejada em pixels
-              height={180} // altura desejada em pixels
+              className="w-10 h-10 sm:w-14 sm:h-14"
+              width={180}
+              height={180} 
             />
           </div>
         </div>
 
-        <section className="w-full flex flex-col justify-center py-6">
-          <h2 className="text-1xl text-white font-medium px-8 relative z-10 text-center">Um Pouco da Nossa Historia</h2>
-          <p className="text-xs text-white px-8 relative z-10 text-center">
+        <section className="w-full flex flex-col justify-center py-6 sm:py-10 gap-2 ">
+          <h2 className="text-1xl sm:text-2xl text-white font-medium px-8 relative z-10 text-center">Um Pouco da Nossa Historia</h2>
+          <p className="text-xs sm:text-[18px] text-white px-8 relative z-10 text-center sm:w-[60%] sm:left-[20%]">
             São 20 anos de história! O CT começou com a missão de difundir o ensinamento das artes marciais, formando atletas e incentivando o desenvolvimento pessoal.
             Ao longo dos anos, nos tornamos referência, promovendo disciplina, respeito e evolução constante.
           </p>
