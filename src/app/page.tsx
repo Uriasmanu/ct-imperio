@@ -81,7 +81,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-black opacity-40"></div>
 
               <div className="absolute bottom-4 w-[80%] flex justify-between ">
-                <p className="font-semibold text-white text-lg">Personal Training</p>
+                <p className="font-semibold text-white text-lg sm:text-2xl">Personal Training</p>
                 <div className="flex gap-4 items-end text-white">
                   <Clock />
                   <CalendarClock />
@@ -106,7 +106,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-black opacity-40"></div>
 
               <div className="absolute bottom-4 w-[80%] flex justify-between ">
-                <p className="font-semibold text-white text-lg">Jiu-Jitsu</p>
+                <p className="font-semibold text-white text-lg sm:text-2xl">Jiu-Jitsu</p>
                 <div className="flex gap-4 items-end text-white">
                   <Clock />
                   <CalendarClock />
@@ -131,7 +131,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-black opacity-40"></div>
 
               <div className="absolute bottom-4 w-[80%] flex justify-between ">
-                <p className="font-semibold text-white text-lg">Muay Thai</p>
+                <p className="font-semibold text-white text-lg sm:text-2xl">Muay Thai</p>
                 <div className="flex gap-4 items-end text-white">
                   <Clock />
                   <CalendarClock />
@@ -156,7 +156,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-black opacity-40"></div>
 
               <div className="absolute bottom-4 w-[80%] flex justify-between ">
-                <p className="font-semibold text-white text-lg">Boxe</p>
+                <p className="font-semibold text-white text-lg sm:text-2xl">Boxe</p>
                 <div className="flex gap-4 items-end text-white">
                   <Clock />
                   <CalendarClock />
@@ -181,7 +181,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-black opacity-40"></div>
 
               <div className="absolute bottom-4 w-[80%] flex justify-between ">
-                <p className="font-semibold text-white text-lg">Karate</p>
+                <p className="font-semibold text-white text-lg sm:text-2xl">Karate</p>
                 <div className="flex gap-4 items-end text-white">
                   <Clock />
                   <CalendarClock />
