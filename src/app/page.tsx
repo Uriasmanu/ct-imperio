@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-slate-800 flex flex-col">
+    <div className="bg-slate-800 flex flex-col items-center w-full">
       <section>
         <div className="flex flex-col justify-center w-full h-[15rem] relative md:h-[25rem] sm:h-[22rem] lg:h-[30rem] xl:h-[35rem] 2xl:h-[40rem] gap-3">
           <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-white font-medium w-[80%] 2xl:w-[65%] xl:w-[60%] 
@@ -33,7 +33,7 @@ export default function Home() {
               alt="logo do ct imperio"
               className="w-10 h-10 sm:w-14 sm:h-14"
               width={180}
-              height={180} 
+              height={180}
             />
           </div>
         </div>
@@ -46,134 +46,133 @@ export default function Home() {
           </p>
         </section>
 
-        <section className="w-full flex flex-col justify-center items-center py-6 ">
-          <div className="bg-gray-600 w-[90vw] h-[200px] rounded-3xl p-4 relative">
+        <section className="flex flex-col sm:w-[90vw] sm:relative sm:left-[7%] sm:overflow-hidden">
 
-            <div
-              className="absolute inset-0"
-              style={{
-                backgroundImage: 'url("/image/treining.jpg")',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                opacity: 0.8,
-              }}
-            ></div>
+          <div className="w-full flex flex-col justify-center items-center py-6 ">
+            <div className="bg-gray-600 w-[90vw] h-[200px] rounded-3xl p-4 relative">
 
-            <div className="absolute inset-0 bg-black opacity-40"></div>
+              <div
+                className="absolute inset-0"
+                style={{
+                  backgroundImage: 'url("/image/treining.jpg")',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  opacity: 0.8,
+                }}
+              ></div>
 
-            <div className="absolute bottom-4 w-[80%] flex justify-between ">
-              <p className="font-semibold text-white text-lg">Personal Training</p>
-              <div className="flex gap-4 items-end text-white">
-                <Clock />
-                <CalendarClock />
+              <div className="absolute inset-0 bg-black opacity-40"></div>
+
+              <div className="absolute bottom-4 w-[80%] flex justify-between ">
+                <p className="font-semibold text-white text-lg">Personal Training</p>
+                <div className="flex gap-4 items-end text-white">
+                  <Clock />
+                  <CalendarClock />
+                </div>
               </div>
             </div>
           </div>
-        </section>
 
-        <section className="w-full flex flex-col justify-center items-center py-6 ">
-          <div className="bg-gray-600 w-[90vw] h-[200px] rounded-3xl p-4 relative">
+          <div className="w-full flex flex-col justify-center items-center py-6 ">
+            <div className="bg-gray-600 w-[90vw] h-[200px] rounded-3xl p-4 relative">
 
-            <div
-              className="absolute inset-0"
-              style={{
-                backgroundImage: 'url("/image/treining.jpg")',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                opacity: 0.8,
-              }}
-            ></div>
+              <div
+                className="absolute inset-0"
+                style={{
+                  backgroundImage: 'url("/image/treining.jpg")',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  opacity: 0.8,
+                }}
+              ></div>
 
-            <div className="absolute inset-0 bg-black opacity-40"></div>
+              <div className="absolute inset-0 bg-black opacity-40"></div>
 
-            <div className="absolute bottom-4 w-[80%] flex justify-between ">
-              <p className="font-semibold text-white text-lg">Jiu-Jitsu</p>
-              <div className="flex gap-4 items-end text-white">
-                <Clock />
-                <CalendarClock />
+              <div className="absolute bottom-4 w-[80%] flex justify-between ">
+                <p className="font-semibold text-white text-lg">Jiu-Jitsu</p>
+                <div className="flex gap-4 items-end text-white">
+                  <Clock />
+                  <CalendarClock />
+                </div>
               </div>
             </div>
           </div>
-        </section>
 
+          <div className="w-full flex flex-col justify-center items-center py-6 ">
+            <div className="bg-gray-600 w-[90vw] h-[200px] rounded-3xl p-4 relative">
 
-        <section className="w-full flex flex-col justify-center items-center py-6 ">
-          <div className="bg-gray-600 w-[90vw] h-[200px] rounded-3xl p-4 relative">
+              <div
+                className="absolute inset-0"
+                style={{
+                  backgroundImage: 'url("/image/treining.jpg")',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  opacity: 0.8,
+                }}
+              ></div>
 
-            <div
-              className="absolute inset-0"
-              style={{
-                backgroundImage: 'url("/image/treining.jpg")',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                opacity: 0.8,
-              }}
-            ></div>
+              <div className="absolute inset-0 bg-black opacity-40"></div>
 
-            <div className="absolute inset-0 bg-black opacity-40"></div>
-
-            <div className="absolute bottom-4 w-[80%] flex justify-between ">
-              <p className="font-semibold text-white text-lg">Muay Thai</p>
-              <div className="flex gap-4 items-end text-white">
-                <Clock />
-                <CalendarClock />
+              <div className="absolute bottom-4 w-[80%] flex justify-between ">
+                <p className="font-semibold text-white text-lg">Muay Thai</p>
+                <div className="flex gap-4 items-end text-white">
+                  <Clock />
+                  <CalendarClock />
+                </div>
               </div>
             </div>
           </div>
-        </section>
 
+          <div className="w-full flex flex-col justify-center items-center py-6 ">
+            <div className="bg-gray-600 w-[90vw] h-[200px] rounded-3xl p-4 relative">
 
+              <div
+                className="absolute inset-0"
+                style={{
+                  backgroundImage: 'url("/image/treining.jpg")',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  opacity: 0.8,
+                }}
+              ></div>
 
-        <section className="w-full flex flex-col justify-center items-center py-6 ">
-          <div className="bg-gray-600 w-[90vw] h-[200px] rounded-3xl p-4 relative">
+              <div className="absolute inset-0 bg-black opacity-40"></div>
 
-            <div
-              className="absolute inset-0"
-              style={{
-                backgroundImage: 'url("/image/treining.jpg")',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                opacity: 0.8,
-              }}
-            ></div>
-
-            <div className="absolute inset-0 bg-black opacity-40"></div>
-
-            <div className="absolute bottom-4 w-[80%] flex justify-between ">
-              <p className="font-semibold text-white text-lg">Boxe</p>
-              <div className="flex gap-4 items-end text-white">
-                <Clock />
-                <CalendarClock />
+              <div className="absolute bottom-4 w-[80%] flex justify-between ">
+                <p className="font-semibold text-white text-lg">Boxe</p>
+                <div className="flex gap-4 items-end text-white">
+                  <Clock />
+                  <CalendarClock />
+                </div>
               </div>
             </div>
           </div>
-        </section>
 
+          <div className="w-full flex flex-col justify-center items-center py-6 ">
+            <div className="bg-gray-600 w-[90vw] h-[200px] rounded-3xl p-4 relative">
 
+              <div
+                className="absolute inset-0"
+                style={{
+                  backgroundImage: 'url("/image/treining.jpg")',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  opacity: 0.8,
+                }}
+              ></div>
 
-        <section className="w-full flex flex-col justify-center items-center py-6 ">
-          <div className="bg-gray-600 w-[90vw] h-[200px] rounded-3xl p-4 relative">
+              <div className="absolute inset-0 bg-black opacity-40"></div>
 
-            <div
-              className="absolute inset-0"
-              style={{
-                backgroundImage: 'url("/image/treining.jpg")',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                opacity: 0.8,
-              }}
-            ></div>
-
-            <div className="absolute inset-0 bg-black opacity-40"></div>
-
-            <div className="absolute bottom-4 w-[80%] flex justify-between ">
-              <p className="font-semibold text-white text-lg">Karate</p>
-              <div className="flex gap-4 items-end text-white">
-                <Clock />
-                <CalendarClock />
+              <div className="absolute bottom-4 w-[80%] flex justify-between ">
+                <p className="font-semibold text-white text-lg">Karate</p>
+                <div className="flex gap-4 items-end text-white">
+                  <Clock />
+                  <CalendarClock />
+                </div>
               </div>
             </div>
           </div>
+
         </section>
 
       </section>
