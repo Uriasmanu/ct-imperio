@@ -1,7 +1,24 @@
+"use client";
 import { CalendarClock, Clock } from "lucide-react";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+
+  const [bgSize, serBgSize] = useState("cover");
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const handleResize = () => {
+      serBgSize(window.innerWidth <= 640 ? "cover" : "");
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize)
+  }, []);
+
   return (
     <div className="bg-slate-800 flex flex-col items-center w-full">
       <section>
@@ -55,7 +72,7 @@ export default function Home() {
                 className="absolute inset-0"
                 style={{
                   backgroundImage: 'url("/image/treining.jpg")',
-                  backgroundSize: 'cover',
+                  backgroundSize: bgSize,
                   backgroundPosition: 'center',
                   opacity: 0.8,
                 }}
@@ -80,7 +97,7 @@ export default function Home() {
                 className="absolute inset-0"
                 style={{
                   backgroundImage: 'url("/image/treining.jpg")',
-                  backgroundSize: 'cover',
+                  backgroundSize: bgSize,
                   backgroundPosition: 'center',
                   opacity: 0.8,
                 }}
@@ -105,7 +122,7 @@ export default function Home() {
                 className="absolute inset-0"
                 style={{
                   backgroundImage: 'url("/image/treining.jpg")',
-                  backgroundSize: 'cover',
+                  backgroundSize: bgSize,
                   backgroundPosition: 'center',
                   opacity: 0.8,
                 }}
@@ -130,7 +147,7 @@ export default function Home() {
                 className="absolute inset-0"
                 style={{
                   backgroundImage: 'url("/image/treining.jpg")',
-                  backgroundSize: 'cover',
+                  backgroundSize: bgSize,
                   backgroundPosition: 'center',
                   opacity: 0.8,
                 }}
@@ -155,7 +172,7 @@ export default function Home() {
                 className="absolute inset-0"
                 style={{
                   backgroundImage: 'url("/image/treining.jpg")',
-                  backgroundSize: 'cover',
+                  backgroundSize: bgSize,
                   backgroundPosition: 'center',
                   opacity: 0.8,
                 }}
