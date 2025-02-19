@@ -3,15 +3,17 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-slate-800 flex flex-col sm:flex-row">
+    <div className="bg-slate-800 flex flex-col">
       <section>
-        <div className="flex flex-col justify-center w-full h-[15rem] relative ">
-          <h2 className="text-2xl text-white font-medium w-[80%] px-8 relative z-10">
+        <div className="flex flex-col justify-center w-full h-[15rem] relative md:h-[25rem] sm:h-[22rem] lg:h-[30rem] xl:h-[35rem] 2xl:h-[40rem] gap-3">
+          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-white font-medium w-[80%] 2xl:w-[65%] xl:w-[60%] 
+          lg:w-[60%] md:w-[60%] px-8 relative z-10 md:left-[10%] sm:left-[10%] sm:w-[60%]">
             Infelizmente para eu sorrir, vocês terão que sofrer.
-          </h2>
-          <p className="text-sm text-white w-[75%] px-8 relative z-10">
-            50 abdominais, passada, flexão, super-man, passada.
+          </h1>
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-white w-[75%] 2xl:w-[50%] xl:w-[50%] lg:w-[50%] px-8 relative z-10 md:left-[10%] md:w-[60%] sm:left-[10%] sm:w-[60%]">
+            50 abdominais, passada, flexão, super-man, flexão diamante, 100 chutes cada perna.
           </p>
+
 
           <div className="absolute inset-0">
             <Image
@@ -20,10 +22,11 @@ export default function Home() {
               fill
               sizes="100vw"
               priority
-              className="object-fill opacity-60"
+              className="object-cover opacity-60"
             />
 
           </div>
+
 
           <div className="w-full flex justify-center absolute top-[90%]">
             <Image
