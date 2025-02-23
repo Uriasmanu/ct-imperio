@@ -11,7 +11,10 @@ import { AiFillTikTok } from "react-icons/ai";
 import { LuMapPin } from "react-icons/lu";
 import { FaDumbbell, FaWhatsapp } from "react-icons/fa";
 
+
 export function Sidebar() {
+
+
     return (
         <div className="flex w-full flex-col bg-muted/40 ">
 
@@ -161,7 +164,7 @@ export function Sidebar() {
                                 </Link>
 
                                 <Link
-                                    href="#"
+                                    href="/#aulas" scroll={false}
                                     className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
                                     prefetch={false}
                                 >
