@@ -7,6 +7,8 @@ import { useState, useEffect } from "react";
 
 export default function Home() {
 
+  const [showOverlay, setShowOverlay] = useState(false)
+
   const { sobreRef, aulasRef, professoresRef, } = useScroll();
 
   const [bgSize, serBgSize] = useState("cover");
@@ -25,7 +27,7 @@ export default function Home() {
 
   return (
     <div className="bg-slate-800 flex flex-col items-center w-full">
-      
+
       <section>
         <div className="flex flex-col justify-center w-full h-[15rem] relative md:h-[25rem] sm:h-[22rem] lg:h-[30rem] xl:h-[35rem] 2xl:h-[40rem] gap-3">
           <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-white font-medium w-[80%] 2xl:w-[65%] xl:w-[60%] 
@@ -58,7 +60,7 @@ export default function Home() {
               height={180}
             />
           </div>
-          
+
         </div>
 
         <section ref={sobreRef} className="w-full flex flex-col justify-center py-6 sm:py-10 gap-2 ">
@@ -89,12 +91,39 @@ export default function Home() {
               <div className="absolute bottom-4 w-[80%] flex justify-between sm:w-[95%]">
                 <p className="font-semibold text-white text-lg sm:text-2xl">Personal Training</p>
                 <div className="flex gap-4 items-end text-white">
-                  <Clock />
-                  <CalendarClock />
+
+                  <button onClick={() => setShowOverlay(true)}>
+                    <Clock />
+                  </button>
+
+                  <button>
+                    <CalendarClock />
+                  </button>
+
                 </div>
               </div>
             </div>
           </div>
+
+          {showOverlay && (
+            <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
+              <div className="relative">
+                <button
+                  className="absolute top-4 right-4 bg-white p-2 rounded-full"
+                  onClick={() => setShowOverlay(false)}
+                >
+                  X
+                </button>
+                <Image
+                  src="/image/MuayThai.jpg"
+                  alt="logo do ct imperio"
+                  className="w-300 h-300 sm:w-400 sm:h-400"
+                  width={300}
+                  height={380}
+                />
+              </div>
+            </div>
+          )}
 
           <div className="w-full flex flex-col justify-center items-center py-6 ">
             <div className="bg-gray-600 w-[90vw] h-[200px] rounded-3xl p-4 relative">
@@ -111,17 +140,44 @@ export default function Home() {
 
               <div className="absolute inset-0 bg-black opacity-40"></div>
 
-              <div className="absolute bottom-4 w-[80%] flex justify-between sm:w-[95%] ">
-                <p className="font-semibold text-white text-lg sm:text-2xl">Jiu-Jitsu</p>
+              <div className="absolute bottom-4 w-[80%] flex justify-between sm:w-[95%]">
+                <p className="font-semibold text-white text-lg sm:text-2xl">Personal Training</p>
                 <div className="flex gap-4 items-end text-white">
-                  <Clock />
-                  <CalendarClock />
+
+                  <button onClick={() => setShowOverlay(true)}>
+                    <Clock />
+                  </button>
+
+                  <button>
+                    <CalendarClock />
+                  </button>
+
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="w-full flex flex-col justify-center items-center py-6 ">
+          {showOverlay && (
+            <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
+              <div className="relative">
+                <button
+                  className="absolute top-4 right-4 bg-white p-2 rounded-full"
+                  onClick={() => setShowOverlay(false)}
+                >
+                  X
+                </button>
+                <Image
+                  src="/image/MuayThai.jpg"
+                  alt="logo do ct imperio"
+                  className="w-300 h-300 sm:w-400 sm:h-400"
+                  width={300}
+                  height={380}
+                />
+              </div>
+            </div>
+          )}
+
+<div className="w-full flex flex-col justify-center items-center py-6 ">
             <div className="bg-gray-600 w-[90vw] h-[200px] rounded-3xl p-4 relative">
 
               <div
@@ -136,17 +192,44 @@ export default function Home() {
 
               <div className="absolute inset-0 bg-black opacity-40"></div>
 
-              <div className="absolute bottom-4 w-[80%] flex justify-between sm:w-[95%] ">
-                <p className="font-semibold text-white text-lg sm:text-2xl">Muay Thai</p>
+              <div className="absolute bottom-4 w-[80%] flex justify-between sm:w-[95%]">
+                <p className="font-semibold text-white text-lg sm:text-2xl">Personal Training</p>
                 <div className="flex gap-4 items-end text-white">
-                  <Clock />
-                  <CalendarClock />
+
+                  <button onClick={() => setShowOverlay(true)}>
+                    <Clock />
+                  </button>
+
+                  <button>
+                    <CalendarClock />
+                  </button>
+
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="w-full flex flex-col justify-center items-center py-6 ">
+          {showOverlay && (
+            <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
+              <div className="relative">
+                <button
+                  className="absolute top-4 right-4 bg-white p-2 rounded-full"
+                  onClick={() => setShowOverlay(false)}
+                >
+                  X
+                </button>
+                <Image
+                  src="/image/MuayThai.jpg"
+                  alt="logo do ct imperio"
+                  className="w-300 h-300 sm:w-400 sm:h-400"
+                  width={300}
+                  height={380}
+                />
+              </div>
+            </div>
+          )}
+
+<div className="w-full flex flex-col justify-center items-center py-6 ">
             <div className="bg-gray-600 w-[90vw] h-[200px] rounded-3xl p-4 relative">
 
               <div
@@ -161,17 +244,45 @@ export default function Home() {
 
               <div className="absolute inset-0 bg-black opacity-40"></div>
 
-              <div className="absolute bottom-4 w-[80%] flex justify-between sm:w-[95%] ">
-                <p className="font-semibold text-white text-lg sm:text-2xl">Boxe</p>
+              <div className="absolute bottom-4 w-[80%] flex justify-between sm:w-[95%]">
+                <p className="font-semibold text-white text-lg sm:text-2xl">Personal Training</p>
                 <div className="flex gap-4 items-end text-white">
-                  <Clock />
-                  <CalendarClock />
+
+                  <button onClick={() => setShowOverlay(true)}>
+                    <Clock />
+                  </button>
+
+                  <button>
+                    <CalendarClock />
+                  </button>
+
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="w-full flex flex-col justify-center items-center py-6 ">
+          {showOverlay && (
+            <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
+              <div className="relative">
+                <button
+                  className="absolute top-4 right-4 bg-white p-2 rounded-full"
+                  onClick={() => setShowOverlay(false)}
+                >
+                  X
+                </button>
+                <Image
+                  src="/image/MuayThai.jpg"
+                  alt="logo do ct imperio"
+                  className="w-300 h-300 sm:w-400 sm:h-400"
+                  width={300}
+                  height={380}
+                />
+              </div>
+            </div>
+          )}
+
+
+<div className="w-full flex flex-col justify-center items-center py-6 ">
             <div className="bg-gray-600 w-[90vw] h-[200px] rounded-3xl p-4 relative">
 
               <div
@@ -186,15 +297,42 @@ export default function Home() {
 
               <div className="absolute inset-0 bg-black opacity-40"></div>
 
-              <div className="absolute bottom-4 w-[80%] flex justify-between sm:w-[95%] ">
-                <p className="font-semibold text-white text-lg sm:text-2xl">Karate</p>
+              <div className="absolute bottom-4 w-[80%] flex justify-between sm:w-[95%]">
+                <p className="font-semibold text-white text-lg sm:text-2xl">Personal Training</p>
                 <div className="flex gap-4 items-end text-white">
-                  <Clock />
-                  <CalendarClock />
+
+                  <button onClick={() => setShowOverlay(true)}>
+                    <Clock />
+                  </button>
+
+                  <button>
+                    <CalendarClock />
+                  </button>
+
                 </div>
               </div>
             </div>
           </div>
+
+          {showOverlay && (
+            <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
+              <div className="relative">
+                <button
+                  className="absolute top-4 right-4 bg-white p-2 rounded-full"
+                  onClick={() => setShowOverlay(false)}
+                >
+                  X
+                </button>
+                <Image
+                  src="/image/MuayThai.jpg"
+                  alt="logo do ct imperio"
+                  className="w-300 h-300 sm:w-400 sm:h-400"
+                  width={300}
+                  height={380}
+                />
+              </div>
+            </div>
+          )}
 
         </section>
 
