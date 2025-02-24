@@ -5,11 +5,12 @@ import { createContext, useContext, useRef, RefObject, ReactNode } from "react";
 
 // Definição do tipo do contexto
 interface ScrollContextType {
-  sobreRef: RefObject<HTMLElement | null>;
-  aulasRef: RefObject<HTMLElement | null>;
-  professoresRef: RefObject<HTMLElement | null>;
+  sobreRef: RefObject<HTMLElement>;
+  aulasRef: RefObject<HTMLElement>;
+  professoresRef: RefObject<HTMLElement>;
   scrollToSection: (ref: RefObject<HTMLElement>) => void;
 }
+
 
 // Criamos o contexto e passamos um valor inicial
 const ScrollContext = createContext<ScrollContextType | undefined>(undefined);
@@ -20,8 +21,10 @@ export const ScrollProvider = ({ children }: { children: ReactNode }) => {
   const aulasRef = useRef<HTMLElement>(null);
   const professoresRef = useRef<HTMLElement>(null);
 
-  const scrollToSection = (ref: RefObject<HTMLElement>) => {
-    ref.current?.scrollIntoView({ behavior: "smooth" });
+  const scrollToSection = (ref: React.RefObject<HTMLElement | null>) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
