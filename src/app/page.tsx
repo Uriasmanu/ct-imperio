@@ -1,9 +1,13 @@
 "use client";
+
+import { useScroll } from "@/context/ScrollContext";
 import { CalendarClock, Clock } from "lucide-react";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
 export default function Home() {
+
+  const { sobreRef, aulasRef, professoresRef, } = useScroll();
 
   const [bgSize, serBgSize] = useState("cover");
 
@@ -57,7 +61,7 @@ export default function Home() {
           
         </div>
 
-        <section className="w-full flex flex-col justify-center py-6 sm:py-10 gap-2 ">
+        <section ref={sobreRef} className="w-full flex flex-col justify-center py-6 sm:py-10 gap-2 ">
           <h2 className="text-1xl sm:text-2xl text-white font-medium px-8 relative z-10 text-center">Um Pouco da Nossa Historia</h2>
           <p className="text-xs sm:text-[18px] text-white px-8 relative z-10 text-center sm:w-[60%] sm:left-[20%]">
             São 20 anos de história! O CT começou com a missão de difundir o ensinamento das artes marciais, formando atletas e incentivando o desenvolvimento pessoal.
@@ -65,7 +69,7 @@ export default function Home() {
           </p>
         </section>
 
-        <section className="flex flex-col sm:w-[90vw] sm:relative sm:left-[7%] sm:overflow-hidden" id="aulas">
+        <section ref={aulasRef} className="flex flex-col sm:w-[90vw] sm:relative sm:left-[7%] sm:overflow-hidden" id="aulas">
 
           <div className="w-full flex flex-col justify-center items-center py-6 ">
             <div className="bg-gray-600 w-[90vw] h-[200px] rounded-3xl p-4 relative">
@@ -195,7 +199,7 @@ export default function Home() {
         </section>
 
       </section>
-      <footer className="w-full flex flex-col justify-center items-center">
+      <footer ref={professoresRef} className="w-full flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center">
           <Image
             src="/image/logo.png"

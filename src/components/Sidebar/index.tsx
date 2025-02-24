@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { Button } from "../ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
@@ -10,10 +12,11 @@ import { BsInstagram } from "react-icons/bs";
 import { AiFillTikTok } from "react-icons/ai";
 import { LuMapPin } from "react-icons/lu";
 import { FaDumbbell, FaWhatsapp } from "react-icons/fa";
+import { useScroll } from "@/context/ScrollContext";
 
 
 export function Sidebar() {
-
+    const { scrollToSection, sobreRef, aulasRef, professoresRef } = useScroll();
 
     return (
         <div className="flex w-full flex-col bg-muted/40 ">
@@ -37,26 +40,28 @@ export function Sidebar() {
 
                         <Tooltip>
                             <TooltipTrigger asChild>
-                                <Link href="#"
+                                <button
+                                    onClick={() => scrollToSection(sobreRef)}
                                     className="flex h-9 w-9 shrink-0 items-center justify-center text-muted-foreground rounded-lg transition-colors hover:text-foreground"
                                 >
 
                                     <LibraryBig className="h-5 w-5" />
                                     <span className="sr-only">Sobre</span>
-                                </Link>
+                                </button>
                             </TooltipTrigger>
                             <TooltipContent side="right">Sobre</TooltipContent>
                         </Tooltip>
 
                         <Tooltip>
                             <TooltipTrigger asChild>
-                                <Link href="#"
+                                <button
+                                    onClick={() => scrollToSection(aulasRef)}
                                     className="flex h-9 w-9 shrink-0 items-center justify-center text-muted-foreground rounded-lg transition-colors hover:text-foreground"
                                 >
 
                                     <FaDumbbell className="h-5 w-5" />
                                     <span className="sr-only">Aulas</span>
-                                </Link>
+                                </button>
                             </TooltipTrigger>
                             <TooltipContent side="right">Aulas</TooltipContent>
                         </Tooltip>
@@ -76,13 +81,14 @@ export function Sidebar() {
 
                         <Tooltip>
                             <TooltipTrigger asChild>
-                                <Link href="#"
+                                <button
+                                    onClick={() => scrollToSection(professoresRef)}
                                     className="flex h-9 w-9 shrink-0 items-center justify-center text-muted-foreground rounded-lg transition-colors hover:text-foreground"
                                 >
 
                                     <Users className="h-5 w-5" />
                                     <span className="sr-only">Professores</span>
-                                </Link>
+                                </button>
                             </TooltipTrigger>
                             <TooltipContent side="right">Professores</TooltipContent>
                         </Tooltip>
@@ -154,23 +160,22 @@ export function Sidebar() {
                                     <span className="sr-only">logo do ct imperio</span>
                                 </Link>
 
-                                <Link
-                                    href="#"
+                                <button
+                                    onClick={() => scrollToSection(sobreRef)}
                                     className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
-                                    prefetch={false}
+
                                 >
                                     <LibraryBig className="h-5 w-5 transition-all" />
                                     Sobre
-                                </Link>
+                                </button>
 
-                                <Link
-                                    href="/#aulas" scroll={false}
+                                <button
+                                    onClick={() => scrollToSection(aulasRef)}
                                     className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
-                                    prefetch={false}
                                 >
                                     <FaDumbbell className="h-5 w-5 transition-all" />
                                     Aulas
-                                </Link>
+                                </button>
 
                                 <Link
                                     href="https://wa.me/5514997856670?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20de%20como%20funciona%20o%20CT%20Imp%C3%A9rio"
@@ -181,14 +186,14 @@ export function Sidebar() {
                                     Contatos
                                 </Link>
 
-                                <Link
-                                    href="#"
+                                <button
+                                    onClick={() => scrollToSection(professoresRef)}
                                     className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
-                                    prefetch={false}
+
                                 >
                                     <Users className="h-5 w-5 transition-all" />
                                     Professores
-                                </Link>
+                                </button>
 
                                 <div className="flex py-4">
                                     <Link

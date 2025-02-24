@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Geist_Mono } from "next/font/google";
 import "./globals.css";
-import {cn} from "@/lib/utils"
+import { cn } from "@/lib/utils"
 
 import { Sidebar } from "@/components/Sidebar";
+import { ScrollProvider } from "@/context/ScrollContext";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -21,6 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+
     <html lang="pt-br">
       <body
         className={cn(
@@ -28,9 +30,12 @@ export default function RootLayout({
           geistMono.className
         )}
       >
-        <Sidebar/>
-        {children}
+        <ScrollProvider>
+          <Sidebar />
+          {children}
+        </ScrollProvider>
       </body>
     </html>
+
   );
 }
