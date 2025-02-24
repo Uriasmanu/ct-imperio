@@ -352,57 +352,57 @@ export default function Home() {
         <section className="flex overflow-x-auto gap-4 p-4 scrollbar-hide sm:gap-6 w-100vw">
           <div className="flex flex-col justify-center items-center gap-2 shrink-0">
             <Image
-              src="/image/treining.jpg"
+              src="/image/will.jpg"
               alt="Professor do CT"
               className="w-24 h-24 rounded-full sm:w-36 sm:h-36"
               width={180}
               height={180}
             />
-            <p className="text-lg text-white font-medium">Siclano</p>
+            <p className="text-lg text-white font-medium">Will</p>
           </div>
 
           <div className="flex flex-col justify-center items-center gap-2 shrink-0">
             <Image
-              src="/image/treining.jpg"
+              src="/image/aline.jpg"
               alt="Professor do CT"
               className="w-24 h-24 rounded-full sm:w-36 sm:h-36"
               width={180}
               height={180}
             />
-            <p className="text-lg text-white font-medium">Siclano</p>
+            <p className="text-lg text-white font-medium">Aline</p>
           </div>
 
           <div className="flex flex-col justify-center items-center gap-2 shrink-0">
             <Image
-              src="/image/treining.jpg"
+              src="/image/rui.jpg"
               alt="Professor do CT"
               className="w-24 h-24 rounded-full sm:w-36 sm:h-36"
               width={180}
               height={180}
             />
-            <p className="text-lg text-white font-medium">Siclano</p>
+            <p className="text-lg text-white font-medium">Rui</p>
           </div>
 
           <div className="flex flex-col justify-center items-center gap-2 shrink-0">
             <Image
-              src="/image/treining.jpg"
+              src="/image/maradona.jpg"
               alt="Professor do CT"
               className="w-24 h-24 rounded-full sm:w-36 sm:h-36"
               width={180}
               height={180}
             />
-            <p className="text-lg text-white font-medium">Siclano</p>
+            <p className="text-lg text-white font-medium">Maradona</p>
           </div>
 
           <div className="flex flex-col justify-center items-center gap-2 shrink-0">
             <Image
-              src="/image/treining.jpg"
+              src="/image/jagunco.jpg"
               alt="Professor do CT"
               className="w-24 h-24 rounded-full sm:w-36 sm:h-36"
               width={180}
               height={180}
             />
-            <p className="text-lg text-white font-medium">Siclano</p>
+            <p className="text-lg text-white font-medium">Jagunço</p>
           </div>
         </section>
 
