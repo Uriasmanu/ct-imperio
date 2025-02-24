@@ -13,10 +13,15 @@ import { AiFillTikTok } from "react-icons/ai";
 import { LuMapPin } from "react-icons/lu";
 import { FaDumbbell, FaWhatsapp } from "react-icons/fa";
 import { useScroll } from "@/context/ScrollContext";
+import { useState } from "react";
 
 
 export function Sidebar() {
     const { scrollToSection, sobreRef, aulasRef, professoresRef } = useScroll();
+
+    const [open, setOpen] = useState(false);
+
+    const closeSheet = () => setOpen(false);
 
     return (
         <div className="flex w-full flex-col bg-muted/40 ">
@@ -134,7 +139,7 @@ export function Sidebar() {
 
             <div className="sm:hidden flex flex-col sm:gap-4 sm:py-4 sm:pl-14 ">
                 <header className="sticky top-0 z-30 flex h-14 items-center px-4 bg-background sm:static sm:h-auto border-0 sm:bg-transparent sm:px-6 bg-slate-800">
-                    <Sheet>
+                    <Sheet open={open} onOpenChange={setOpen}>
                         <SheetTrigger asChild>
                             <Button size="icon" className="sm:hidden border-0 bg-slate-800 ">
                                 <svg width="256px" height="256px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
@@ -143,7 +148,7 @@ export function Sidebar() {
                             </Button>
                         </SheetTrigger>
 
-                        <SheetContent side="left" className="sm:max-w-x flex flex-col justify-between bg-yellow-300">
+                        <SheetContent side="left" className="sm:max-w-x flex flex-col justify-between bg-yellow-300" >
 
                             <nav className="grid gap-6 text-lg font-medium">
                                 <Link href="#"
@@ -161,9 +166,11 @@ export function Sidebar() {
                                 </Link>
 
                                 <button
-                                    onClick={() => scrollToSection(sobreRef)}
+                                    onClick={() => {
+                                        scrollToSection(sobreRef);
+                                        closeSheet();
+                                    }}
                                     className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
-
                                 >
                                     <LibraryBig className="h-5 w-5 transition-all" />
                                     Sobre
