@@ -32,10 +32,10 @@ export default function Home() {
         <div className="flex flex-col justify-center w-full h-[15rem] relative md:h-[25rem] sm:h-[22rem] lg:h-[30rem] xl:h-[35rem] 2xl:h-[40rem] gap-3">
           <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-white font-medium w-[80%] 2xl:w-[65%] xl:w-[60%] 
           lg:w-[60%] md:w-[60%] px-8 relative z-10 md:left-[10%] sm:left-[10%] sm:w-[60%]">
-            Infelizmente para eu sorrir, vocês terão que sofrer.
+            Sem limites, sem desculpas, só evolução!
           </h1>
           <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-white w-[75%] 2xl:w-[50%] xl:w-[50%] lg:w-[50%] px-8 relative z-10 md:left-[10%] md:w-[60%] sm:left-[10%] sm:w-[60%]">
-            50 abdominais, passada, flexão, super-man, flexão diamante, 100 chutes cada perna.
+            Vença cada desafio, quebre barreiras e torne-se a sua melhor versão a cada dia!
           </p>
 
 
@@ -177,7 +177,7 @@ export default function Home() {
             </div>
           )}
 
-<div className="w-full flex flex-col justify-center items-center py-6 ">
+          <div className="w-full flex flex-col justify-center items-center py-6 ">
             <div className="bg-gray-600 w-[90vw] h-[200px] rounded-3xl p-4 relative">
 
               <div
@@ -229,7 +229,7 @@ export default function Home() {
             </div>
           )}
 
-<div className="w-full flex flex-col justify-center items-center py-6 ">
+          <div className="w-full flex flex-col justify-center items-center py-6 ">
             <div className="bg-gray-600 w-[90vw] h-[200px] rounded-3xl p-4 relative">
 
               <div
@@ -282,7 +282,7 @@ export default function Home() {
           )}
 
 
-<div className="w-full flex flex-col justify-center items-center py-6 ">
+          <div className="w-full flex flex-col justify-center items-center py-6 ">
             <div className="bg-gray-600 w-[90vw] h-[200px] rounded-3xl p-4 relative">
 
               <div
