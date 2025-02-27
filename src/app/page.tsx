@@ -35,7 +35,7 @@ export default function Home() {
             Sem limites, sem desculpas, só evolução!
           </h1>
           <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-white w-[75%] 2xl:w-[50%] xl:w-[50%] lg:w-[50%] px-8 relative z-10 md:left-[10%] md:w-[60%] sm:left-[10%] sm:w-[60%]">
-            Sem desculpas, sem limites! Apenas dedicação, foco e evolução no treino diário!
+            Vença cada desafio, quebre barreiras e torne-se a sua melhor versão a cada dia!
           </p>
 
 
