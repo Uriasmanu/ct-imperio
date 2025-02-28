@@ -41,12 +41,12 @@ export default function Home() {
 
           <div className="absolute inset-0">
             <Image
-              src="/image/banner.jpg"
+              src="/image/banner.png"
               alt="Banner"
               fill
               sizes="100vw"
               priority
-              className="object-cover opacity-60"
+              className="object-cover opacity-60 top-50"
             />
 
           </div>
@@ -131,7 +131,7 @@ export default function Home() {
               <div
                 className="absolute inset-0"
                 style={{
-                  backgroundImage: 'url("/image/treining.jpg")',
+                  backgroundImage: 'url("/image/jiu.jpg")',
                   backgroundSize: bgSize,
                   backgroundPosition: 'center',
                   opacity: 0.8,
@@ -141,7 +141,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-black opacity-40"></div>
 
               <div className="absolute bottom-4 w-[80%] flex justify-between sm:w-[95%]">
-                <p className="font-semibold text-white text-lg sm:text-2xl">Personal Training</p>
+                <p className="font-semibold text-white text-lg sm:text-2xl">Jiu-Jitsu</p>
                 <div className="flex gap-4 items-end text-white">
 
                   <button onClick={() => setShowOverlay(true)}>
@@ -183,7 +183,7 @@ export default function Home() {
               <div
                 className="absolute inset-0"
                 style={{
-                  backgroundImage: 'url("/image/treining.jpg")',
+                  backgroundImage: 'url("/image/thai.jpg")',
                   backgroundSize: bgSize,
                   backgroundPosition: 'center',
                   opacity: 0.8,
@@ -193,7 +193,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-black opacity-40"></div>
 
               <div className="absolute bottom-4 w-[80%] flex justify-between sm:w-[95%]">
-                <p className="font-semibold text-white text-lg sm:text-2xl">Personal Training</p>
+                <p className="font-semibold text-white text-lg sm:text-2xl">Muay Thai</p>
                 <div className="flex gap-4 items-end text-white">
 
                   <button onClick={() => setShowOverlay(true)}>
