@@ -11,13 +11,13 @@ export default function Home() {
 
   const { sobreRef, aulasRef, professoresRef, } = useScroll();
 
-  const [bgSize, serBgSize] = useState("cover");
+  const [bgSize, serBgSize] = useState("auto");
 
   useEffect(() => {
     if (typeof window === "undefined") return;
 
     const handleResize = () => {
-      serBgSize(window.innerWidth <= 640 ? "cover" : "");
+      serBgSize(window.innerWidth <= 640 ? "cover" : "auto");
     };
 
     handleResize();
@@ -46,7 +46,7 @@ export default function Home() {
               fill
               sizes="100vw"
               priority
-              className="object-cover opacity-60 top-50"
+              className="object-cover opacity-60 sm:object-top"
             />
 
           </div>
@@ -134,6 +134,7 @@ export default function Home() {
                   backgroundImage: 'url("/image/jiu.jpg")',
                   backgroundSize: bgSize,
                   backgroundPosition: 'center',
+                  backgroundRepeat: "repeat-x",
                   opacity: 0.8,
                 }}
               ></div>
@@ -245,7 +246,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-black opacity-40"></div>
 
               <div className="absolute bottom-4 w-[80%] flex justify-between sm:w-[95%]">
-                <p className="font-semibold text-white text-lg sm:text-2xl">Personal Training</p>
+                <p className="font-semibold text-white text-lg sm:text-2xl">Karate</p>
                 <div className="flex gap-4 items-end text-white">
 
                   <button onClick={() => setShowOverlay(true)}>
@@ -298,7 +299,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-black opacity-40"></div>
 
               <div className="absolute bottom-4 w-[80%] flex justify-between sm:w-[95%]">
-                <p className="font-semibold text-white text-lg sm:text-2xl">Personal Training</p>
+                <p className="font-semibold text-white text-lg sm:text-2xl">Boxe</p>
                 <div className="flex gap-4 items-end text-white">
 
                   <button onClick={() => setShowOverlay(true)}>
