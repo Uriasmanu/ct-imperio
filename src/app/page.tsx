@@ -11,13 +11,13 @@ export default function Home() {
 
   const { sobreRef, aulasRef, professoresRef, } = useScroll();
 
-  const [bgSize, serBgSize] = useState("auto");
+  const [bgSize, serBgSize] = useState("contain");
 
   useEffect(() => {
     if (typeof window === "undefined") return;
 
     const handleResize = () => {
-      serBgSize(window.innerWidth <= 640 ? "cover" : "auto");
+      serBgSize(window.innerWidth <= 640 ? "cover" : "contain");
     };
 
     handleResize();
@@ -74,7 +74,7 @@ export default function Home() {
         <section ref={aulasRef} className="flex flex-col sm:w-[90vw] sm:relative sm:left-[7%] sm:overflow-hidden" id="aulas">
 
           <div className="w-full flex flex-col justify-center items-center py-6 ">
-            <div className="bg-gray-600 w-[90vw] h-[200px] rounded-3xl p-4 relative">
+            <div className="bg-gray-600 w-[90vw] h-[250px] rounded-3xl p-4 relative sm:h-[350px]">
 
               <div
                 className="absolute inset-0"
@@ -126,7 +126,7 @@ export default function Home() {
           )}
 
           <div className="w-full flex flex-col justify-center items-center py-6 ">
-            <div className="bg-gray-600 w-[90vw] h-[200px] rounded-3xl p-4 relative">
+            <div className="bg-gray-600 w-[90vw] h-[250px] rounded-3xl p-4 relative sm:h-[350px]">
 
               <div
                 className="absolute inset-0"
@@ -179,7 +179,7 @@ export default function Home() {
           )}
 
           <div className="w-full flex flex-col justify-center items-center py-6 ">
-            <div className="bg-gray-600 w-[90vw] h-[200px] rounded-3xl p-4 relative">
+            <div className="bg-gray-600 w-[90vw] h-[250px] rounded-3xl p-4 relative sm:h-[350px]">
 
               <div
                 className="absolute inset-0"
@@ -231,12 +231,12 @@ export default function Home() {
           )}
 
           <div className="w-full flex flex-col justify-center items-center py-6 ">
-            <div className="bg-gray-600 w-[90vw] h-[200px] rounded-3xl p-4 relative">
+            <div className="bg-gray-600 w-[90vw] h-[250px] rounded-3xl p-4 relative sm:h-[350px]">
 
               <div
                 className="absolute inset-0"
                 style={{
-                  backgroundImage: 'url("/image/treining.jpg")',
+                  backgroundImage: 'url("/image/thai.jpg")',
                   backgroundSize: bgSize,
                   backgroundPosition: 'center',
                   opacity: 0.8,
@@ -284,12 +284,12 @@ export default function Home() {
 
 
           <div className="w-full flex flex-col justify-center items-center py-6 ">
-            <div className="bg-gray-600 w-[90vw] h-[200px] rounded-3xl p-4 relative">
+            <div className="bg-gray-600 w-[90vw] h-[250px] rounded-3xl p-4 relative sm:h-[350px]">
 
               <div
                 className="absolute inset-0"
                 style={{
-                  backgroundImage: 'url("/image/treining.jpg")',
+                  backgroundImage: 'url("/image/thai.jpg")',
                   backgroundSize: bgSize,
                   backgroundPosition: 'center',
                   opacity: 0.8,
