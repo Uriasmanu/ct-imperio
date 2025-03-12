@@ -65,13 +65,13 @@ export default function Home() {
 
         <section ref={sobreRef} className="w-full flex flex-col justify-center py-6 sm:py-10 gap-2 ">
           <h2 className="text-1xl sm:text-2xl text-white font-medium px-8 relative z-10 text-center">Um Pouco da Nossa Historia</h2>
-          <p className="text-xs sm:text-[18px] text-white px-8 relative z-10 text-center sm:w-[60%] sm:left-[20%]">
-            Desde 2015, ajudamos pessoas a saírem do sedentarismo, cuidarem da saúde e evoluírem no esporte, seja para competir ou simplesmente ter mais qualidade de vida.
-
-Hoje, somos referência no interior paulista, com um trabalho dedicado a crianças e adultos. Venha fazer parte de um dos CTs de lutas que mais se destacam na região!
-
-Agende uma aula experimental e dê o primeiro passo para uma vida mais ativa!
-          </p>
+         <p className="text-xs sm:text-[18px] text-white px-8 relative z-10 text-center sm:w-[60%] sm:left-[20%]">
+  Desde 2015, ajudamos pessoas a saírem do sedentarismo, cuidarem da saúde e evoluírem no esporte, seja para competir ou simplesmente ter mais qualidade de vida.  
+  <br /><br />
+  Hoje, somos referência no interior paulista, com um trabalho dedicado a crianças e adultos. Venha fazer parte de um dos CTs de lutas que mais se destacam na região!  
+  <br /><br />
+  Agende uma aula experimental e dê o primeiro passo para uma vida mais ativa!
+</p>
         </section>
 
         <section ref={aulasRef} className="flex flex-col sm:w-[90vw] sm:relative sm:left-[7%] sm:overflow-hidden" id="aulas">
